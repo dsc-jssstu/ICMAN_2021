@@ -1,11 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICMAN 2021</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <title>ICMAN 2021</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-uppercase text-white font-weight-bold">ICMAN 2021</h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit nisl, pretium sit amet feugiat ut, posuere at dui. Mauris tristique tortor in congue pulvinar. Donec in faucibus odio.</p>
+                        <a class="btn btn-default" href="#agenda"><span class="px-3">Find Out More</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Timer-->
+        <section class="page-section" id="timer" style="background-color:#dddddd;">
+            <div class="container text-white">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0 text-small">We'll see you on 18th December 2021.</h2>
+                        <hr class="divider light my-4" />
+                      <div class="col-md-12 text-center rounded shadow p-5">
+                          <div id="clock-b" class="countdown-circles d-flex flex-wrap justify-content-center"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agenda-->
+        <section class="page-section" id="agenda">
+            <div class="container">
+                <h2 class="text-center mt-0 mb-2">Agenda</h2>
+                <p class="text-center text-small text-muted"> Full agenda available <a href="#">here</a></p>
+                <hr class="divider my-4" />
+                <div class="row">
+                  <div class="col-3 links-nav">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <a class="nav-link active py-3" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Dec 18</a>
+                      <a class="nav-link py-3" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Dec 19</a>
+                    </div>
+                  </div>
+                  <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active px-3" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <img src="img/agenda1.jpg" class="img-fluid float-left">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam purus odio, posuere posuere fermentum ut, dignissim sit amet mi. Suspendisse vitae varius enim. Suspendisse eget nibh mauris. Mauris rhoncus non mi a pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris dui eros, molestie ut convallis id, laoreet at metus. Donec vehicula sem vel tellus sodales, a tristique velit viverra.</p>
+                        <p class="text-right text-muted text-uppercase font-change"><i class="fas fa-clock"></i><span class="mr-5 ml-2">Time</span>
+                        <i class="fas fa-map"></i><span class="mr-5 ml-2">Place</span>
+                        <i class="fas fa-user"></i><span class="mr-5 ml-2">Speaker</span></p><br>
+
+                        <img src="img/agenda2.jpg" class="img-fluid float-left">
+                        <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam purus odio, posuere posuere fermentum ut, dignissim sit amet mi. Suspendisse vitae varius enim. Suspendisse eget nibh mauris. Mauris rhoncus non mi a pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris dui eros, molestie ut convallis id, laoreet at metus. Donec vehicula sem vel tellus sodales, a tristique velit viverra.</p>
+                        <p class="text-right text-muted text-uppercase font-change"><i class="fas fa-clock"></i><span class="mr-5 ml-2">Time</span>
+                        <i class="fas fa-map"></i><span class="mr-5 ml-2">Place</span>
+                        <i class="fas fa-user"></i><span class="mr-5 ml-2">Speaker</span></p><br>
+
+                      </div>
+                      <div class="tab-pane fade px-3" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <img src="img/agenda2.jpg" class="img-fluid float-left">
+                        <p>Morbi venenatis consequat enim in finibus. Mauris malesuada justo id lobortis pulvinar. Aenean molestie metus quis lectus lacinia cursus. Nullam porttitor ligula ut consequat commodo. Nunc porta dui sit amet odio volutpat consequat. In venenatis elit eget metus cursus venenatis.</p>
+                        <p class="text-right text-muted text-uppercase font-change"><i class="fas fa-clock"></i><span class="mr-5 ml-2">Time</span>
+                        <i class="fas fa-map"></i><span class="mr-5 ml-2">Place</span>
+                        <i class="fas fa-user"></i><span class="mr-5 ml-2">Speaker</span></p><br>
+
+                        <img src="img/agenda1.jpg" class="img-fluid float-left">
+                        <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam purus odio, posuere posuere fermentum ut, dignissim sit amet mi. Suspendisse vitae varius enim. Suspendisse eget nibh mauris. Mauris rhoncus non mi a pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris dui eros, molestie ut convallis id, laoreet at metus. Donec vehicula sem vel tellus sodales, a tristique velit viverra.</p>
+                        <p class="text-right text-muted text-uppercase font-change"><i class="fas fa-clock"></i><span class="mr-5 ml-2">Time</span>
+                        <i class="fas fa-map"></i><span class="mr-5 ml-2">Place</span>
+                        <i class="fas fa-user"></i><span class="mr-5 ml-2">Speaker</span></p><br>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Speakers-->
+        <section class="page-section" id="speakers">
+            <div class="container py-5">
+              <h2 class="text-center mt-0 mb-2">Speakers</h2>
+              <p class="text-center text-small text-white">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+              <hr class="divider my-4" />
+            <div class="row speakers my-5 d-flex justify-content-center">
+              <div class="card col-md-3 mx-3 my-3">
+                <img class="card-img-top mt-2" src="img/1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Speaker Name</h5>
+                  <p class="card-text text-center">Nunc a commodo neque. Aliquam vulputate nunc ut lacus luctus, at blandit nibh ultricies. Phasellus commodo nisl eros, eu dictum elit mollis non. </p>
+                  <p class="text-center speaker-social-media">
+                    <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fas fa-globe fa-2x mx-2"></i></a>
+                 </p>
+                </div>
+              </div>
+              <div class="card col-md-3 mx-3 my-3">
+                <img class="card-img-top mt-2" src="img/2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Speaker Name</h5>
+                  <p class="card-text text-center">Nunc a commodo neque. Aliquam vulputate nunc ut lacus luctus, at blandit nibh ultricies. Phasellus commodo nisl eros, eu dictum elit mollis non. </p>
+                  <p class="text-center speaker-social-media">
+                    <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fas fa-globe fa-2x mx-2"></i></a>
+                 </p>
+                </div>
+              </div>
+              <div class="card col-md-3 mx-3 my-3">
+                <img class="card-img-top mt-2 m-0" src="img/3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Speaker Name</h5>
+                  <p class="card-text text-center">Nunc a commodo neque. Aliquam vulputate nunc ut lacus luctus, at blandit nibh ultricies. Phasellus commodo nisl eros, eu dictum elit mollis non. </p>
+                  <p class="text-center speaker-social-media">
+                    <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fas fa-globe fa-2x mx-2"></i></a>
+                 </p>
+                </div>
+              </div>
+
+              <div class="card col-md-3 mx-3 my-3">
+                <img class="card-img-top mt-2" src="img/1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Speaker Name</h5>
+                  <p class="card-text text-center">Nunc a commodo neque. Aliquam vulputate nunc ut lacus luctus, at blandit nibh ultricies. Phasellus commodo nisl eros, eu dictum elit mollis non. </p>
+                  <p class="text-center speaker-social-media">
+                    <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fas fa-globe fa-2x mx-2"></i></a>
+                 </p>
+                </div>
+              </div>
+              <div class="card col-md-3 mx-3 my-3">
+                <img class="card-img-top mt-2" src="img/2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Speaker Name</h5>
+                  <p class="card-text text-center">Nunc a commodo neque. Aliquam vulputate nunc ut lacus luctus, at blandit nibh ultricies. Phasellus commodo nisl eros, eu dictum elit mollis non. </p>
+                  <p class="text-center speaker-social-media">
+                    <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fas fa-globe fa-2x mx-2"></i></a>
+                 </p>
+                </div>
+              </div>
+              <div class="card col-md-3 mx-3 my-3">
+                <img class="card-img-top mt-2 mt-2" src="img/3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Speaker Name</h5>
+                  <p class="card-text text-center">Nunc a commodo neque. Aliquam vulputate nunc ut lacus luctus, at blandit nibh ultricies. Phasellus commodo nisl eros, eu dictum elit mollis non. </p>
+                  <p class="text-center speaker-social-media">
+                    <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fas fa-globe fa-2x mx-2"></i></a>
+                 </p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+        </section>
+
+        <!--Important Dates-->
+        <section class="page-section">
+            <div class="container text-center">
+              <h2 class="text-center mt-0 mb-2">Important Dates</h2>
+              <p class="text-center text-small text-muted">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. </p>
+              <hr class="divider my-4" />
+              <div class="row d-flex justify-content-center">
+                <table class="table table-striped col-md-8">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Event</th>
+                      <th scope="col">Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Event 1</td>
+                      <td>Date 1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Event 2</td>
+                      <td>Date 2</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Event 3</td>
+                      <td>Date 3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </section>
+
+        <!--Organising Committee-->
+        <section class="page-section" id="committee">
+            <div class="container text-center">
+              <h2 class="text-center mt-0 mb-2">Organising Committee</h2>
+              <p class="text-center text-small text-white">Lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+              <hr class="divider my-4" />
+              <div class="row speakers my-5 d-flex justify-content-center">
+                <div class="card col-md-3 mx-3 my-3">
+                  <img class="card-img-top mt-2" src="img/1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Name</h5>
+                    <p class="card-text text-center">Nunc a commodo neque. Aliquam vulputate nunc ut lacus luctus, at blandit nibh ultricies. Phasellus commodo nisl eros, eu dictum elit mollis non. </p>
+                    <p class="text-center speaker-social-media">
+                      <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                      <a href="#"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                      <a href="#"><i class="fas fa-globe fa-2x mx-2"></i></a>
+                   </p>
+                  </div>
+                </div>
+                <div class="card col-md-3 mx-3 my-3">
+                  <img class="card-img-top mt-2" src="img/2.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Name</h5>
+                    <p class="card-text text-center">Nunc a commodo neque. Aliquam vulputate nunc ut lacus luctus, at blandit nibh ultricies. Phasellus commodo nisl eros, eu dictum elit mollis non. </p>
+                    <p class="text-center speaker-social-media">
+                      <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                      <a href="#"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                      <a href="#"><i class="fas fa-globe fa-2x mx-2"></i></a>
+                   </p>
+                  </div>
+                </div>
+                <div class="card col-md-3 mx-3 my-3">
+                  <img class="card-img-top mt-2 m-0" src="img/3.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Name</h5>
+                    <p class="card-text text-center">Nunc a commodo neque. Aliquam vulputate nunc ut lacus luctus, at blandit nibh ultricies. Phasellus commodo nisl eros, eu dictum elit mollis non. </p>
+                    <p class="text-center speaker-social-media">
+                      <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                      <a href="#"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                      <a href="#"><i class="fas fa-globe fa-2x mx-2"></i></a>
+                   </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!--Sponsors-->
+        <section class="page-section">
+            <div class="container text-center">
+              <h2 class="text-center mt-0 mb-2">Sponsors</h2>
+              <p class="text-center text-small text-muted">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+              <hr class="divider my-4" />
+              <div class="row d-flex justify-content-center">
+                <img src="img/sponsor.jpg">
+                <img src="img/sponsor.jpg">
+                <img src="img/sponsor.jpg">
+                <img src="img/sponsor.jpg">
+                <img src="img/sponsor.jpg">
+                <img src="img/sponsor.jpg">
+              </div>
+            </div>
+        </section>
+
+        <!-- Location-->
+        <section class="page-section" id="location">
+            <div class="container text-center py-5">
+                <h2 class="mb-4">Location</h2>
+                <h6>Vivamus vel arcu ut augue commodo euismod a sed mauris. </h6>
+                <p class="text-small" style="color:#dddddd;">Maecenas a mauris elementum, placerat elit iaculis, egestas enim. <br>Suspendisse id facilisis neque. </p>
+            </div>
+        </section>
+
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                        <div>+91 99999 88888</div>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                        <a class="d-block" href="mailto:contact@sjce.ac.in">contact@sjce.ac.in</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!--Countdown-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
