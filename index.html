@@ -15,6 +15,9 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <header>
+
+      <!--This might help!
+      https://getbootstrap.com/docs/4.0/components/navbar/-->
       <nav>
         <ul class="home-bar">
           <ls><a class="link" href="#home">Home</a></ls>
@@ -31,30 +34,45 @@
     <body id="page-top">
 
         <!-- Masthead-->
-        <header class="masthead">
+        <section class="masthead">
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-10 align-self-end">
-                        <h1 class="text-uppercase text-white font-weight-bold">ICMAN 2021</h1>
-                        <hr class="divider my-4" />
+                        <h1 class="text-uppercase font-weight-bold">ICMAN 2021</h1>
+                        <hr class="divider-light my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit nisl, pretium sit amet feugiat ut, posuere at dui. Mauris tristique tortor in congue pulvinar. Donec in faucibus odio.</p>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit nisl, pretium sit amet feugiat ut, posuere at dui. Mauris tristique tortor in congue pulvinar. Donec in faucibus odio.</p>
                         <a class="btn btn-default" href="#agenda"><span class="px-3">Find Out More</span></a>
                     </div>
                 </div>
             </div>
 
-        </header>
+        </section>
 
         <!-- Timer-->
-        <section class="page-section" id="timer" style="background-color:#dddddd;">
+        <section class="page-section" id="intro">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0 text-small">A Short Intro</h2>
+                        <p class="text-center text-small text-muted">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+                        <hr class="divider my-4" />
+                        <p>Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timer-->
+        <section class="page-section" id="timer">
             <div class="container text-white">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
                         <h2 class="mt-0 text-small">We'll see you on 18th December 2021.</h2>
-                        <hr class="divider light my-4" />
-                      <div class="col-md-12 text-center rounded shadow p-5">
+                        <p class="text-center text-small text-grey">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+                        <hr class="divider-light my-4" />
+                      <div class="col-md-12 text-center rounded shadow p-3">
                           <div id="clock-b" class="countdown-circles d-flex flex-wrap justify-content-center"></div>
                       </div>
                     </div>
@@ -65,8 +83,12 @@
         <!-- Agenda-->
         <section class="page-section" id="agenda">
             <div class="container">
-                <h2 class="text-center mt-0 mb-2">Agenda</h2>
-                <p class="text-center text-small text-muted"> Full agenda available <a href="#">here</a></p>
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <h2 class="mt-0 mb-2">Agenda</h2>
+                  <p class="text-small text-muted"> Full agenda available <a href="#">here</a></p>
+                </div>
+              </div>
                 <hr class="divider my-4" />
                 <div class="row">
                   <div class="col-3 links-nav">
@@ -113,9 +135,13 @@
         <!-- Speakers-->
         <section class="page-section" id="speakers">
             <div class="container py-5">
-              <h2 class="text-center mt-0 mb-2">Speakers</h2>
-              <p class="text-center text-small text-white">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
-              <hr class="divider my-4" />
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <h2 class="text-white mt-0 mb-2">Speakers</h2>
+                  <p class="text-small text-grey">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+                </div>
+              </div>
+              <hr class="divider-light my-4" />
             <div class="row speakers my-5 d-flex justify-content-center">
               <div class="card col-md-3 mx-3 my-3">
                 <img class="card-img-top mt-2" src="img/1.jpg" alt="Card image cap">
@@ -198,8 +224,12 @@
         <!--Important Dates-->
         <section class="page-section" id="important-dates">
             <div class="container text-center">
-              <h2 class="text-center mt-0 mb-2">Important Dates</h2>
-              <p class="text-center text-small text-muted">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. </p>
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <h2 class="mt-0 mb-2">Important Dates</h2>
+                  <p class="text-small text-muted">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. </p>
+                </div>
+              </div>
               <hr class="divider my-4" />
               <div class="row d-flex justify-content-center">
                 <table class="table table-striped col-md-8">
@@ -235,9 +265,13 @@
         <!--Organising Committee-->
         <section class="page-section" id="committee">
             <div class="container text-center">
-              <h2 class="text-center mt-0 mb-2">Organising Committee</h2>
-              <p class="text-center text-small text-white">Lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
-              <hr class="divider my-4" />
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <h2 class="text-white mt-0 mb-2">Organising Committee</h2>
+                  <p class="text-small text-grey">Lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+                </div>
+              </div>
+              <hr class="divider-light my-4" />
               <div class="row speakers my-5 d-flex justify-content-center">
                 <div class="card col-md-3 mx-3 my-3">
                   <img class="card-img-top mt-2" src="img/1.jpg" alt="Card image cap">
@@ -282,8 +316,12 @@
         <!--Sponsors-->
         <section class="page-section" id="sponsors">
             <div class="container text-center">
-              <h2 class="text-center mt-0 mb-2">Sponsors</h2>
-              <p class="text-center text-small text-muted">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <h2 class="mt-0 mb-2">Sponsors</h2>
+                  <p class="text-small text-muted">Donec tempor, arcu at egestas sollicitudin, lorem purus luctus dui, id accumsan leo eros nec diam. Proin et erat elit. Nunc quis metus erat. Vestibulum semper dolor in congue pharetra. </p>
+                </div>
+              </div>
               <hr class="divider my-4" />
               <div class="row d-flex justify-content-center">
                 <img src="img/sponsor.jpg">
@@ -299,9 +337,14 @@
         <!-- Location-->
         <section class="page-section" id="location">
             <div class="container text-center py-5">
-                <h2 class="mb-4">Location</h2>
-                <h6>Vivamus vel arcu ut augue commodo euismod a sed mauris. </h6>
-                <p class="text-small" style="color:#dddddd;">Maecenas a mauris elementum, placerat elit iaculis, egestas enim. <br>Suspendisse id facilisis neque. </p>
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                <h2 class="mb-4 text-white">Location</h2>
+                <h6 class="text-grey">Vivamus vel arcu ut augue commodo euismod a sed mauris. </h6>
+              </div>
+            </div>
+                <hr class="divider-light my-4" />
+                <p class="text-small text-white">Maecenas a mauris elementum, placerat elit iaculis, egestas enim. <br>Suspendisse id facilisis neque. </p>
             </div>
         </section>
 
@@ -327,7 +370,7 @@
                       </div>
                       <div class="col-lg-3 mr-auto text-center">
                           <i class="fab fa-instagram fa-3x mb-3 text-muted"></i>
-                          <a class="d-block" href="www.instagram.com/ieee_sjce">IEEE SJCE</a>
+                          <a class="d-block" href="https://www.instagram.com/ieee_sjce">IEEE SJCE</a>
                       </div>
                       <div class="col-lg-3 mr-auto text-center">
                           <i class="fab fa-linkedin fa-3x mb-3 text-muted"></i>
@@ -339,11 +382,18 @@
 
           <!-- Footer -->
           <footer>
-            <div class= "copyright-box"></div>
-              <div class="copyright-claim text-left"> © IEEE SJCE, All Right Reserved </div>
-              <div class="develop-by text-right"><p>Developed By</p> </div>
-              <div class="dsclogo size-20px"><img class="logo"src="img/dsc-logo.png"></div>
-          </footer>
+            <div class="container">
+              <div class="row py-3 px-3">
+                <div class= "copyright-box"></div>
+                  <div class="copyright-claim text-md-left text-center col-md-6 my-auto"> © IEEE SJCE, All Right Reserved </div>
+                  <div class="col-md-6">
+                    <div class="develop-by text-md-left text-center mt-2"><p>Developed By</p></div>
+                    <div class="dsclogo"><img class="logo" src="img/dsc-logo.png"></div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
 
 
         <!--Bootstrap-->
