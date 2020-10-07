@@ -135,3 +135,59 @@ header.masthead h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+header{
+  width: auto;
+  height: 75px;
+  background-color: rgba(92, 77, 66, 0.3);
+
+}
+.home-bar{
+  padding-top: 20px
+}
+a.link{
+  color: #ffffff;
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  padding-left: 60px;
+}
+a.link:hover{
+  text-decoration:none;
+  font-style: italic;
+  font-style: oblique;
+  color: rgba(210,105,30,1);
+}
+
+footer{
+  width: auto;
+  height: 125px;
+  background-color: rgba(92, 77, 66, 0.3);
+}
+.dsclogo{
+  height:auto;
+  width:400px;
+  display: inline-block;
+}
+img.logo{
+    width: 400px;
+    height: auto;
+
+}
+.develop-by{
+  color: #rgba(255,255, 255,1);
+  font-family: Tahoma;
+  display: inline-block;
+  font-size: 15px;
+  height: auto;
+  width: 400px;
+}
+.copyright-claim{
+  color: #rgba(255,255, 255,1);
+  font-family: Tahoma;
+  display: inline-block;
+  font-size: 15px;
+  height: auto;
+  width: 400px;
+  padding: 50px;
+}
