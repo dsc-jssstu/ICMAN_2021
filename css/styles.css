@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6{
 .masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/sjce.jpg");
+  background: url("../img/sjce.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -43,6 +43,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .masthead h1 {
   font-size: 3rem;
+  background: -webkit-linear-gradient(#002855, #00629B	);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (min-width: 992px) {
   .masthead {
@@ -66,7 +69,7 @@ h1,h2,h3,h4,h5,h6{
 
 .btn-default {
   cursor: pointer;
-  background-color: rgba(0,98,155,0.5);
+  background-color: rgba(0,98,155);
   padding: 15px;
   font-size: 18px;
   border: 1px solid transparent;
@@ -109,28 +112,28 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #timer{
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../img/time.jpg");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.4) 100%), url("../img/time.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #committee{
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/committee.jpg");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../img/committee.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #speakers{
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/speakers.jpg");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../img/speakers.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #location{
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/sjce2.jpg");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.5) 0%, rgba(92, 77, 66, 0.5) 100%), url("../img/sjce2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,7 +141,7 @@ h1,h2,h3,h4,h5,h6{
 header{
   width: auto;
   height: 75px;
-  background-color: rgba(92, 77, 66, 0.3);
+  background-color: #111111;
 
 }
 .home-bar{
@@ -161,7 +164,7 @@ a.link:hover{
 
 footer{
   width: auto;
-  background-color: rgba(92, 77, 66, 0.3);
+  background-color: #75787B	;
 }
 .dsclogo{
   height:auto;
@@ -185,4 +188,20 @@ img.logo{
   display: inline-block;
   font-size: 15px;
   height: auto;
+}
+
+.text-grey{
+  color:#D5D6D7 !important;
+}
+
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #002855	;
+}
+
+hr.divider-light {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #dddddd	;
 }
