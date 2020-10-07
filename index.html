@@ -13,21 +13,28 @@
         <script src="https://kit.fontawesome.com/8dc6827451.js" crossorigin="anonymous"></script>
 
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Responsive Nav Bar-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <header>
 
       <!--This might help!
       https://getbootstrap.com/docs/4.0/components/navbar/-->
-      <nav>
-        <ul class="home-bar">
-          <ls><a class="link" href="#home">Home</a></ls>
-          <ls><a class="link" href="#agenda">Agenda</a></ls>
-          <ls><a class="link" href="#speakers">Speakers</a></ls>
-          <ls><a class="link" href="#committee">Organising Committee</a></ls>
-          <ls><a class="link" href="#sponsors">Sponsors</a></ls>
-          <ls><a class="link" href="#contact">Contact Us</a></ls>
-        </ul>
-      </nav>
+      <div class="logo-container"><img class="ieee-logo"src="img/logo.png" alt="IEEE-SJCE"></div>
+
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#committee">Organising Committee</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#contact">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
 
 
     </header>
@@ -43,7 +50,7 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit nisl, pretium sit amet feugiat ut, posuere at dui. Mauris tristique tortor in congue pulvinar. Donec in faucibus odio.</p>
-                        <a class="btn btn-default" href="#agenda"><span class="px-3">Find Out More</span></a>
+                        <a class="btn btn-default" href="#agenda"><span class="px-3  text-white" >Find Out More</span></a>
                     </div>
                 </div>
             </div>
@@ -384,8 +391,6 @@
           <footer>
             <div class="container">
               <div class="row py-3 px-3">
-                <div class= "copyright-box"></div>
-                  <div class="copyright-claim text-md-left text-center col-md-6 my-auto"> © IEEE SJCE, All Right Reserved </div>
                   <div class="col-md-6">
                     <div class="develop-by text-md-left text-center mt-2"><p>Developed By</p></div>
                     <div class="dsclogo"><img class="logo" src="img/dsc-logo.png"></div>
