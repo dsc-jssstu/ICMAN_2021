@@ -140,7 +140,8 @@ h1,h2,h3,h4,h5,h6{
 }
 header{
   width: auto;
-  height: 75px;
+  padding:10px;
+  height: 90px;
   background-color: rgba(0,98,155);
 
 }
@@ -156,17 +157,14 @@ img.ieee-logo{
 }
 
 .topnav {
-  background-color:none;
-  padding: 10px;
-  margin-left: 100px;
   overflow: hidden;
-  display: inline-block;
 }
 
 .topnav a {
   float: left;
   display: block;
   color: #ffffff;
+  background-color: rgba(0,98,155);
   font-family: Tahoma;
   font-weight: bold;
   text-align: center;
@@ -186,15 +184,21 @@ img.ieee-logo{
 .topnav .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (min-width: 990px) {
+  .logo-container{
+    float:right;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
-}
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: relative;  z-index: 1;}
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
