@@ -290,6 +290,11 @@ a.d-block:hover {
   background-color: #bbb;
 }
 
+p.font-weight-bold{
+  color: rgba(0, 98, 155);
+
+}
+
 .w-100 {
   width: 100% !important;
   min-height: 100vh;
