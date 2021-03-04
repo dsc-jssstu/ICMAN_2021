@@ -17,6 +17,10 @@ body {
   background-color: #fff;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Tahoma;
   font-weight: bold;
@@ -174,7 +178,7 @@ img.ieee-logo {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .topnav a:hover {
@@ -290,12 +294,16 @@ a.d-block:hover {
   background-color: #bbb;
 }
 
-p.font-weight-bold{
+p.font-weight-bold {
   color: rgba(0, 98, 155);
-
 }
 
 .w-100 {
   width: 100% !important;
   min-height: 100vh;
+}
+
+.carousel-inner .card {
+  background-color: #FFF4E6;
+  opacity: 0.9;
 }
