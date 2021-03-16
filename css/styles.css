@@ -147,7 +147,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  width: auto;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
   padding: 10px;
   height: 90px;
   background-color: rgba(0, 98, 155);
@@ -178,7 +180,7 @@ img.ieee-logo {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .topnav a:hover {
