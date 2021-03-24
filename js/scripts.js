@@ -3,7 +3,7 @@
   "use strict";
 
 //Timer
-  $('#clock-b').countdown('2021/12/18').on('update.countdown', function(event) {
+  $('#clock-b').countdown('2021/12/17').on('update.countdown', function(event) {
     var $this = $(this).html(event.strftime(''
       + '<span class="h1 font-weight-bold">%D</span><b>Day%!d</b>'
       + '<span class="h1 font-weight-bold">%H</span><b> Hr</b>'
